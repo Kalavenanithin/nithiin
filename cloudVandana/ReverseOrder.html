@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function reverseWords(sentence) {
+  // Split the sentence into an array of words.
+  const words = sentence.split(' ');
+
+  // Reverse each word in the array.
+  const reversedWords = words.map((word) => word.split('').reverse().join(''));
+
+  // Join the array of reversed words back into a sentence.
+  const reversedSentence = reversedWords.join(' ');
+
+  return reversedSentence;
+}
+const sentence = 'This is a sunny day';
+
+const reversedSentence = reverseWords(sentence);
+
+console.log(reversedSentence);
+    </script>
+</head>
+<body>
+    <center>
+    <h4><u>This is a sunny day</u></h4>
+    <h4>Reversed Words are printed on the console</h4>
+    </center>
+</body>
+</html>
